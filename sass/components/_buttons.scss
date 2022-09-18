@@ -1,0 +1,71 @@
+.btn-outline-grey {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 15px;
+  background-color: transparent;
+  border: 1px solid $color-text-dark-grey;
+  color: $color-text-medium-grey;
+  cursor: pointer;
+  transition: 150ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+}
+
+.btn-summary {
+  color: $color-white;
+  cursor: pointer;
+  background-color: $color-light-blue;
+  border: none;
+  padding: 12px 60px;
+  border-radius: 50px;
+  margin-bottom: 16px;
+  width: 100%;
+  max-width: 500px;
+  transition: 150ms ease-in-out;
+
+  &:hover {
+    background-color: darken($color-light-blue, 15%);
+  }
+}
+
+.btn-footer {
+  background-color: $color-light-blue;
+  border-radius: 50px;
+  border: none;
+  color: $color-white;
+  padding: 16px 26px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($color-light-blue, 15%);
+  }
+}
+
+.btn-continue {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  i {
+    color: $color-light-blue;
+    font-size: 11px;
+  }
+  button {
+    border: none;
+    background-color: transparent;
+    color: $color-light-blue;
+    cursor: pointer;
+    font-size: 16px;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  outline: none;
+}

@@ -1,0 +1,102 @@
+.card {
+  display: grid;
+  &__artwork {
+    display: flex;
+    align-items: center;
+    grid-area: artwork;
+
+    .cart-img {
+      @include saved-image;
+
+      @media (min-width: $desktop-breakpoint) {
+        @include cart-image;
+      }
+    }
+
+    .saved-img {
+      @include saved-image;
+    }
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+
+      .song-title {
+        font-weight: bold;
+        color: $color-black;
+
+        @media (min-width: $desktop-breakpoint) {
+          font-size: 16px;
+        }
+      }
+
+      .artist-title {
+        color: $color-text-dark-grey;
+      }
+    }
+  }
+
+  .remove {
+    grid-area: remove;
+    margin-left: auto;
+  }
+
+  .product__type {
+    grid-area: product-type;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    img {
+      vertical-align: middle;
+    }
+    .product-text {
+      vertical-align: middle;
+      font-weight: bold;
+      line-height: 24px;
+      color: $color-text-dark-grey;
+    }
+  }
+  .credit {
+    grid-area: credit;
+    justify-self: end;
+  }
+
+  .card-button {
+    grid-area: card-button;
+    justify-self: end;
+  }
+
+  .remove-save {
+    display: none;
+    @media (min-width: $desktop-breakpoint) {
+      display: flex;
+    }
+    grid-area: remove-save;
+    justify-self: end;
+    color: $color-text-dark-grey;
+  }
+
+  .saved-remove-add {
+    grid-area: saved-remove-add;
+    display: none;
+    flex-direction: row;
+    gap: 10px;
+    color: $color-text-dark-grey;
+    justify-self: end;
+
+    @media (min-width: $desktop-breakpoint) {
+      display: flex;
+    }
+
+    button {
+      display: inline-block;
+      padding: 5px 15px;
+      border-radius: 15px;
+      background-color: $color-white;
+      border: 1px solid $color-text-dark-grey;
+      color: $color-text-medium-grey;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.cart {
+  grid-area: cart;
+  &__container {
+    padding: 40px 16px;
+    @media (min-width: $desktop-breakpoint) {
+      padding: 80px 75px;
+    }
+
+    .card {
+      @include cart-grid;
+    }
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid #dadada;
+  }
+}

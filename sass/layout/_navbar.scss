@@ -72,25 +72,7 @@
 
         ul {
           li {
-            [data-badge-count]::after {
-              content: attr(data-badge-count);
-              align-items: center;
-              background: $color-light-blue;
-              border-radius: 50%;
-              color: $color-white;
-              display: flex;
-              font-size: 12px;
-              font-weight: 600;
-              font-style: normal;
-              height: 15px;
-              justify-content: center;
-              left: 5px;
-              line-height: 15px;
-              padding: 2px 2px;
-              position: absolute;
-              top: -5px;
-              min-width: 16px;
-            }
+            @include navbar-badge;
           }
           i {
             margin-right: 7px;
