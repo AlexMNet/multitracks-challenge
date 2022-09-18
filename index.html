@@ -13,11 +13,96 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="/css/style.css" />
     <script src="/js/script.js"></script>
     <title>Cart | MultiTracks</title>
   </head>
   <body>
-    Test
+    <!-- Header/navbar -->
+    <header class="header__main">
+      <nav class="navbar">
+        <!-- Mobile Nav -->
+        <div class="navbar__mobile">
+          <a href="" class="navbar__mobile__menu">
+            <div class="navbar__mobile__menu__dots"></div>
+            <div class="navbar__mobile__menu__dots"></div>
+            <div class="navbar__mobile__menu__dots"></div>
+          </a>
+          <img src="/img/mt.png" alt="MultiTracks Logo" />
+          <div class="navbar__mobile__right">
+            <div>
+              <a href="#">
+                <img src="/img/magnifying-glass.png" alt="Search" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="/img/user.png" alt="User" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Desktop Nav -->
+        <div class="navbar__desktop">
+          <div class="navbar__desktop__left">
+            <img
+              src="https://mtracks.azureedge.net/public/images/site/logo/en/logo-mono.svg"
+              alt=""
+            />
+            <ul>
+              <li class="navbar-link">
+                <a href="#"
+                  >Products <i class="caret bi bi-caret-down-fill"></i
+                ></a>
+              </li>
+              <li class="navbar-link">
+                <a href="#"
+                  >Songs <i class="caret bi bi-caret-down-fill"></i
+                ></a>
+              </li>
+              <li class="navbar-link">
+                <a href="#"
+                  >Sounds <i class="caret bi bi-caret-down-fill"></i
+                ></a>
+              </li>
+              <li class="navbar-link">
+                <a href="#"
+                  >Pricing <i class="caret bi bi-caret-down-fill"></i
+                ></a>
+              </li>
+              <li class="navbar-link">
+                <a href="#">More <i class="caret bi bi-caret-down-fill"></i></a>
+              </li>
+              <li class="navbar-link">
+                <a class="covid-link" href="#">COVID-19</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar__desktop__right">
+            <ul>
+              <li class="navbar-link"><a href="">Sign Up </a></li>
+              <li class="navbar-link">
+                <i class="navbar-icon bi bi-person"></i><a href="">Account </a>
+              </li>
+              <li class="navbar-link">
+                <i class="navbar-icon bi bi-cart2" data-badge-count="1"></i
+                ><a href="">Cart</a>
+              </li>
+              <li class="navbar-link">
+                <i class="navbar-icon bi bi-headset"></i><a href="">Support</a>
+              </li>
+            </ul>
+            <div class="navbar__desktop__right__search">
+              <input class="input-nav" type="text" placeholder="Search" />
+              <img src="/img/magnifying-glass.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>

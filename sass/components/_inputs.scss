@@ -1,0 +1,39 @@
+.input-footer {
+  display: flex;
+  align-items: center;
+
+  input {
+    padding: 5px 8px;
+    background-color: $color-input-bg-dark;
+    border: 1px solid $color-input-border-dark;
+    height: 40px;
+    width: 239px;
+  }
+
+  button {
+    width: 112px;
+    height: 40px;
+    background-color: $color-light-blue;
+    border-radius: 0px 4px 4px 0px;
+    border: none;
+    cursor: pointer;
+    color: $color-white;
+    transition: 150ms ease-in-out;
+
+    &:hover {
+      background-color: darken($color-light-blue, 15%);
+    }
+  }
+}
+
+.input-nav {
+  padding: 5px;
+  border-radius: 5px;
+  color: $color-lightest-grey;
+  border: 2px solid $color-lightest-grey;
+  background-color: $color-white;
+
+  &::placeholder {
+    color: $color-lightest-grey;
+  }
+}

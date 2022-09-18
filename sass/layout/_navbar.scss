@@ -1,0 +1,114 @@
+.header__main {
+  border-bottom: 1px solid $color-lightest-grey;
+  .navbar {
+    padding: 25px;
+
+    @media (min-width: $desktop-breakpoint) {
+      .navbar__mobile {
+        display: none;
+      }
+      .navbar__desktop {
+        display: flex;
+      }
+    }
+    &__mobile {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &__menu {
+        align-items: center;
+        display: inline-flex;
+        height: 40px;
+        justify-content: center;
+        width: 40px;
+
+        &__dots {
+          background: $color-lightest-grey;
+          border-radius: 50%;
+          height: 5px;
+          width: 5px;
+          pointer-events: none;
+          margin-right: 5px;
+        }
+      }
+
+      &__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        color: $color-lightest-grey;
+      }
+    }
+
+    &__desktop {
+      display: none;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      ul {
+        li {
+          display: inline-block;
+          margin-right: 10px;
+        }
+      }
+
+      &__left {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .covid-link {
+          color: $color-light-blue;
+        }
+      }
+
+      &__right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        ul {
+          li {
+            [data-badge-count]::after {
+              content: attr(data-badge-count);
+              align-items: center;
+              background: $color-light-blue;
+              border-radius: 50%;
+              color: $color-white;
+              display: flex;
+              font-size: 12px;
+              font-weight: 600;
+              font-style: normal;
+              height: 15px;
+              justify-content: center;
+              left: 5px;
+              line-height: 15px;
+              padding: 2px 2px;
+              position: absolute;
+              top: -5px;
+              min-width: 16px;
+            }
+          }
+          i {
+            margin-right: 7px;
+            color: $color-lightest-grey;
+            position: relative;
+          }
+        }
+        &__search {
+          display: flex;
+          align-items: center;
+          position: relative;
+
+          img {
+            position: absolute;
+            right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

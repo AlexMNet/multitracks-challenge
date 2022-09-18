@@ -9,3 +9,29 @@ body {
   font-style: normal;
   color: $color-text-primary;
 }
+
+p {
+  margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: $color-navbar-link;
+}
+
+.section-title {
+  font-size: 33px;
+}
+
+.summary-title {
+  font-weight: bold;
+  color: $color-title-bold;
+}
+
+.summary-title-promo {
+  font-weight: bold;
+  color: $color-title-bold;
+  padding: 8px 0px;
+}

@@ -1,8 +1,15 @@
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 body {
   background-color: #fff; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -12,3 +19,141 @@ body {
   font-weight: 400;
   font-style: normal;
   color: #000000; }
+
+p {
+  margin-top: 0; }
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #919191; }
+
+.section-title {
+  font-size: 33px; }
+
+.summary-title {
+  font-weight: bold;
+  color: #282828; }
+
+.summary-title-promo {
+  font-weight: bold;
+  color: #282828;
+  padding: 8px 0px; }
+
+.navbar-link {
+  font-size: 18px; }
+  .navbar-link :hover {
+    color: #43b1e6; }
+  .navbar-link .caret {
+    font-size: 12px; }
+
+.input-footer {
+  display: flex;
+  align-items: center; }
+  .input-footer input {
+    padding: 5px 8px;
+    background-color: #171717;
+    border: 1px solid #5c5c5c;
+    height: 40px;
+    width: 239px; }
+  .input-footer button {
+    width: 112px;
+    height: 40px;
+    background-color: #43b1e6;
+    border-radius: 0px 4px 4px 0px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    transition: 150ms ease-in-out; }
+    .input-footer button:hover {
+      background-color: #1a8cc3; }
+
+.input-nav {
+  padding: 5px;
+  border-radius: 5px;
+  color: #dadada;
+  border: 2px solid #dadada;
+  background-color: #fff; }
+  .input-nav::placeholder {
+    color: #dadada; }
+
+.header__main {
+  border-bottom: 1px solid #dadada; }
+  .header__main .navbar {
+    padding: 25px; }
+    @media (min-width: 1440px) {
+      .header__main .navbar .navbar__mobile {
+        display: none; }
+      .header__main .navbar .navbar__desktop {
+        display: flex; } }
+    .header__main .navbar__mobile {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .header__main .navbar__mobile__menu {
+        align-items: center;
+        display: inline-flex;
+        height: 40px;
+        justify-content: center;
+        width: 40px; }
+        .header__main .navbar__mobile__menu__dots {
+          background: #dadada;
+          border-radius: 50%;
+          height: 5px;
+          width: 5px;
+          pointer-events: none;
+          margin-right: 5px; }
+      .header__main .navbar__mobile__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        color: #dadada; }
+    .header__main .navbar__desktop {
+      display: none;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between; }
+      .header__main .navbar__desktop ul li {
+        display: inline-block;
+        margin-right: 10px; }
+      .header__main .navbar__desktop__left {
+        display: flex;
+        align-items: center;
+        gap: 16px; }
+        .header__main .navbar__desktop__left .covid-link {
+          color: #43b1e6; }
+      .header__main .navbar__desktop__right {
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        .header__main .navbar__desktop__right ul li [data-badge-count]::after {
+          content: attr(data-badge-count);
+          align-items: center;
+          background: #43b1e6;
+          border-radius: 50%;
+          color: #fff;
+          display: flex;
+          font-size: 12px;
+          font-weight: 600;
+          font-style: normal;
+          height: 15px;
+          justify-content: center;
+          left: 5px;
+          line-height: 15px;
+          padding: 2px 2px;
+          position: absolute;
+          top: -5px;
+          min-width: 16px; }
+        .header__main .navbar__desktop__right ul i {
+          margin-right: 7px;
+          color: #dadada;
+          position: relative; }
+        .header__main .navbar__desktop__right__search {
+          display: flex;
+          align-items: center;
+          position: relative; }
+          .header__main .navbar__desktop__right__search img {
+            position: absolute;
+            right: 10px; }
