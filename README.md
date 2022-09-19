@@ -18,3 +18,11 @@ See the deployed site here! [Live Site](https://multitracks-cart.netlify.app/)
 - Add more resuable components
 - Add more mixins to abstract css
 - Add reusable grid and flex components suchs as rows and columns
+
+## Run Project
+
+- Clone repo
+- npm install
+- Then simply run the index.html using a tool such as live server in VSCode
+- To edit sass run `npm run compile:sass` to see changes live
+- If editing Typescript files run `tsc --watch`
