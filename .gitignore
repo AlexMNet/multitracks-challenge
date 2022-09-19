@@ -34,3 +34,6 @@ jspm_packages/
 *.sass.map
 *.scss.map
 
+# VSCode settings
+.vscode
+

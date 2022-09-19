@@ -1,5 +1,5 @@
-function createRipple(event) {
-  const button = event.currentTarget;
+function createRipple(event: MouseEvent): void {
+  const button = event.currentTarget as HTMLButtonElement;
 
   // Calculate the dimensions of the circular span
   const circle = document.createElement('span');
@@ -20,15 +20,23 @@ function createRipple(event) {
   button.appendChild(circle);
 }
 
-const buttons = document.getElementsByTagName('button');
+const buttons = document.getElementsByTagName(
+  'button'
+) as HTMLCollectionOf<HTMLButtonElement>;
+
 for (const button of buttons) {
   button.addEventListener('click', createRipple);
 }
 
-function openSidenav() {
-  document.getElementById('sidenav').style.width = '250px';
+function openSidenav(): void {
+  const sidenav = document.getElementById('sidenav') as HTMLDivElement;
+  sidenav.style.width = '250px';
+  //   document.getElementById('sidenav').style.width = '250px';
 }
 
 function closeNav() {
-  document.getElementById('sidenav').style.width = '0';
+  const sidenav = document.getElementById('sidenav') as HTMLDivElement;
+  sidenav.style.width = '0';
 }
+
+export {};
