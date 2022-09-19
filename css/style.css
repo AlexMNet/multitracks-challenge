@@ -20,7 +20,8 @@ html {
 body {
   background-color: #fff;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  position: relative; }
 
 *,
 *::before,
@@ -56,6 +57,9 @@ a:visited,
 a:active {
   text-decoration: none;
   color: #919191; }
+
+i {
+  margin-right: 7px; }
 
 .button-outline {
   padding: 5px 15px;
@@ -520,7 +524,6 @@ a:active {
           top: -5px;
           min-width: 16px; }
         .header__main .navbar__desktop__right ul i {
-          margin-right: 7px;
           color: #dadada;
           position: relative; }
         .header__main .navbar__desktop__right__search {
@@ -551,6 +554,42 @@ a:active {
           grid-template-columns: 53% 23% 23%;
           grid-template-areas: 'artwork product-type saved-remove-add';
           gap: 0px; } }
+
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */ }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    margin: 0 auto; }
+    .sidenav a:hover {
+      color: #a7a7a7; }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px; }
 
 .sticky__footer {
   position: fixed;
