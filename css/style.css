@@ -1,3 +1,15 @@
+span.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 600ms linear;
+  background-color: rgba(255, 255, 255, 0.7); }
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0; } }
+
 .medium-grey {
   color: #919191; }
 
@@ -78,6 +90,8 @@ a:active {
   font-weight: bold; }
 
 .btn-outline-grey {
+  position: relative;
+  overflow: hidden;
   display: inline-block;
   padding: 5px 15px;
   border-radius: 15px;
@@ -90,6 +104,8 @@ a:active {
     transform: scale(1.05); }
 
 .btn-summary {
+  position: relative;
+  overflow: hidden;
   color: #fff;
   cursor: pointer;
   background-color: #43b1e6;
@@ -104,6 +120,8 @@ a:active {
     background-color: #1a8cc3; }
 
 .btn-footer {
+  position: relative;
+  overflow: hidden;
   background-color: #43b1e6;
   border-radius: 50px;
   border: none;
@@ -125,6 +143,20 @@ a:active {
     color: #43b1e6;
     cursor: pointer;
     font-size: 16px; }
+
+.btn-input {
+  position: relative;
+  overflow: hidden;
+  width: 112px;
+  height: 40px;
+  background-color: #43b1e6;
+  border-radius: 0px 4px 4px 0px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: 150ms ease-in-out; }
+  .btn-input:hover {
+    background-color: #1a8cc3; }
 
 .btn {
   cursor: pointer;
@@ -240,17 +272,6 @@ a:active {
     color: #b6b6b6;
     height: 40px;
     width: 239px; }
-  .input-footer button {
-    width: 112px;
-    height: 40px;
-    background-color: #43b1e6;
-    border-radius: 0px 4px 4px 0px;
-    border: none;
-    cursor: pointer;
-    color: #fff;
-    transition: 150ms ease-in-out; }
-    .input-footer button:hover {
-      background-color: #1a8cc3; }
 
 .input-nav {
   padding: 5px;
