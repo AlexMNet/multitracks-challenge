@@ -10,21 +10,6 @@
     height: 40px;
     width: 239px;
   }
-
-  button {
-    width: 112px;
-    height: 40px;
-    background-color: $color-light-blue;
-    border-radius: 0px 4px 4px 0px;
-    border: none;
-    cursor: pointer;
-    color: $color-white;
-    transition: 150ms ease-in-out;
-
-    &:hover {
-      background-color: darken($color-light-blue, 15%);
-    }
-  }
 }
 
 .input-nav {
