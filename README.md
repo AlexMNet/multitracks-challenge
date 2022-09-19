@@ -2,7 +2,7 @@
 
 This project is a replication of the [MultiTracks.com](https://www.multitracks.com/) cart page. There is support for mobile (375px) and desktop (1440px) views.
 
-See the deployed site here! [Live Site](https://mulitracks.netlify.app/)
+See the deployed site here! [Live Site](https://multitracks-cart.netlify.app/)
 
 ### Features
 
