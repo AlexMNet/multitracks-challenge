@@ -27,11 +27,11 @@
       <nav class="navbar">
         <!-- Mobile Nav -->
         <div class="navbar__mobile">
-          <a href="" class="navbar__mobile__menu">
+          <button href="" class="navbar__mobile__menu btn" onclick="openSidenav()">
             <div class="navbar__mobile__menu__dots"></div>
             <div class="navbar__mobile__menu__dots"></div>
             <div class="navbar__mobile__menu__dots"></div>
-          </a>
+          </button>
           <img src="/img/mt.png" alt="MultiTracks Logo" />
           <div class="navbar__mobile__right">
             <div>
@@ -102,9 +102,22 @@
             </div>
           </div>
         </div>
+
+        <!-- Sidenav for mobile -->
+        <div id="sidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">Thank you</a>
+          <a href="#">for your</a>
+          <a href="#">Consideration</a>
+          <br>
+          <a href="https://github.com/AlexMNet" target="_blank"><i class="bi bi-github"></i> Github </a>
+          <a href="https://www.linkedin.com/in/alexmnet/" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+          <a href="https://www.alexmaldonado.dev/" target="_blank"><i class="bi bi-link-45deg"></i> Website</a>
+        </div>
       </nav>
     </header>
     <main class="main">
+      
       <section class="cart">
         <div class="cart__container">
           <h1 class="section-title">My Cart</h1>
@@ -543,6 +556,14 @@
         <button class="btn-footer ripple">PLACE ORDER</button>
       </div>
     </div>
+    <!-- <div id="sidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="">Thank you</a>
+      <a href="">for your</a>
+      <a href="">Consideration</a>
+      <a href="">hi</a>
+      <a href="">hi</a>
+    </div> -->
 
     <script src="/js/script.js"></script>
   </body>

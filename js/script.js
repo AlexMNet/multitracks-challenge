@@ -24,3 +24,11 @@ const buttons = document.getElementsByTagName('button');
 for (const button of buttons) {
   button.addEventListener('click', createRipple);
 }
+
+function openSidenav() {
+  document.getElementById('sidenav').style.width = '250px';
+}
+
+function closeNav() {
+  document.getElementById('sidenav').style.width = '0';
+}
