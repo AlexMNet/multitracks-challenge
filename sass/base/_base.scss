@@ -1,11 +1,20 @@
 html {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  //For accesability purposes, defaults to 16px, matches 100% to the fontsize set in the browser
+  // font-size: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
   background-color: $color-bg-primary;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 ul {

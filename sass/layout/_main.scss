@@ -1,0 +1,16 @@
+.main {
+  display: grid;
+  grid-template-areas:
+    'cart'
+    'summary'
+    'saved';
+
+  @media (min-width: $desktop-breakpoint) {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      'cart summary'
+      'saved summary';
+  }
+}

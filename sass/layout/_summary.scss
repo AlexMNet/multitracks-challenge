@@ -1,0 +1,70 @@
+.summary {
+  background-color: $color-bg-secondary;
+  grid-area: summary;
+
+  .container {
+    padding: 40px 16px;
+    @media (min-width: $desktop-breakpoint) {
+      width: 475px;
+      padding: 80px 75px;
+      h1 {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    a {
+      color: $color-light-blue;
+      text-decoration: underline;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid $color-lightest-grey;
+    }
+
+    &__row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      @media (min-width: $desktop-breakpoint) {
+        padding: 5px 0;
+      }
+    }
+
+    &__value {
+      color: $color-text-medium-grey;
+    }
+
+    &__icon {
+      color: $color-bg-dark;
+    }
+
+    &__order {
+      p {
+        color: $color-text-medium-grey;
+      }
+
+      div {
+        margin: 0 auto;
+        text-align: center;
+      }
+      .terms {
+        text-align: center;
+        font-size: 14px;
+        color: $color-text-light-grey;
+
+        a {
+          color: inherit;
+        }
+      }
+    }
+  }
+}

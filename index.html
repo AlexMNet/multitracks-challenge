@@ -10,7 +10,7 @@
       type="image/svg+xml"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -104,5 +104,444 @@
         </div>
       </nav>
     </header>
+    <main class="main">
+      <section class="cart">
+        <div class="cart__container">
+          <h1 class="section-title">My Cart</h1>
+          <!-- Card 1 -->
+          <article class="card">
+            <div class="card__artwork">
+              <div class="cart-img">
+                <img
+                  src="https://mtracks.azureedge.net/public/images/albums/520/3260.jpg"
+                  alt="Album Cover"
+                />
+              </div>
+              <div class="card__artwork__title">
+                <span class="song-title">Graves Into Gardens</span>
+                <span class="artist-title">Elevation Worship</span>
+              </div>
+            </div>
+
+            <div class="remove show-mobile">
+              <button class="btn">
+                <i class="bi bi-x-lg" style="font-size: 18px"></i>
+              </button>
+            </div>
+            <div class="product__type">
+              <div class="img">
+                <img src="/img/multitracks.png" alt="" />
+              </div>
+              <span class="product-text">MultiTrack WAV</span>
+            </div>
+            <div class="credit">
+              <span class="credit-text">39 Credits</span>
+            </div>
+            <div class="card-button show-mobile">
+              <button class="btn-outline-grey">Save For Later</button>
+            </div>
+            <div class="remove-save show-desktop">
+              <a href="">Remove </a><span>&nbsp | &nbsp</span>
+              <a href=""> Save for later</a>
+            </div>
+          </article>
+          <hr />
+          <!-- Card 2 -->
+          <article class="card">
+            <div class="card__artwork">
+              <div class="cart-img">
+                <img
+                  src="https://mtracks.azureedge.net/public/images/albums/520/2171.jpg"
+                  alt="Album Cover"
+                />
+              </div>
+              <div class="card__artwork__title">
+                <span class="song-title">Goodness of God</span>
+                <span class="artist-title">Bethel Music</span>
+              </div>
+            </div>
+
+            <div class="remove show-mobile">
+              <button class="btn">
+                <i class="btn bi bi-x-lg" style="font-size: 18px"></i>
+              </button>
+            </div>
+            <div class="product__type">
+              <div class="img">
+                <img src="/img/chart-builder.png" alt="" />
+              </div>
+              <span class="product-text">Chart</span>
+            </div>
+            <div class="credit">
+              <span class="credit-text">2 Credits</span>
+            </div>
+            <div class="card-button show-mobile">
+              <button class="btn-outline-grey">Save For Later</button>
+            </div>
+            <div class="remove-save show-desktop">
+              <a href="">Remove </a><span>&nbsp | &nbsp</span>
+              <a href=""> Save for later</a>
+            </div>
+          </article>
+          <hr />
+          <div class="btn-continue">
+            <i class="bi bi-chevron-left"></i>
+            <button>Continue Shopping</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Order Summary -->
+      <section class="summary">
+        <aside class="container">
+          <h1 class="section-title">Order Summary</h1>
+          <div class="summary__details">
+            <div class="summary__details__row">
+              <div class="summary__details__title">
+                <span class="summary-title">Credits in your account</span>
+              </div>
+              <div class="summary__details__value">
+                <span>234</span>
+              </div>
+            </div>
+            <div class="summary__details__row">
+              <div class="summary__details__title">
+                <span class="summary-title">Credits required</span>
+              </div>
+              <div class="summary__details__value">
+                <span>41</span>
+              </div>
+            </div>
+            <div class="summary__details__row">
+              <div class="summary__details__title">
+                <p class="summary-title-promo">Promo Code</p>
+              </div>
+              <div class="summary__details__icon">
+                <span><i class="btn-text bi bi-chevron-down"></i></span>
+              </div>
+            </div>
+            <div>
+              <hr />
+            </div>
+            <div class="summary__details__row">
+              <div class="summary__details__title">
+                <span class="summary-title">Subtotal</span>
+              </div>
+              <div class="summary__details__value">
+                <span>41</span>
+              </div>
+            </div>
+            <div class="summary__details__row">
+              <div class="summary__details__title">
+                <span class="summary-title">Tax</span>
+              </div>
+              <div class="summary__details__value">
+                <span>-</span>
+              </div>
+            </div>
+            <div>
+              <hr />
+            </div>
+            <div class="summary__details__row">
+              <div class="summary__details__title">
+                <span class="summary-title">TOTAL</span>
+              </div>
+              <div class="summary__details__value">
+                <span>41</span>
+              </div>
+            </div>
+            <div>
+              <hr />
+            </div>
+            <div class="summary__details__row">
+              <div class="summary__details__title">
+                <span class="summary-title">Payment Method</span>
+              </div>
+            </div>
+            <div class="summary__details__row">
+              <div class="summary__details__title">
+                <span class="summary-title"
+                  >American Express
+                  <button class="btn">
+                    <span class="medium-grey">-1234</span></span>
+                  </button>
+              </div>
+              <div class="summary__details__link">
+                <a href="#">Change</a>
+              </div>
+            </div>
+            <div>
+              <hr />
+            </div>
+            <div class="summary__details__order">
+              <p>All sales are final.</p>
+              <div>
+                <button class="btn-summary">Place Order</button>
+              </div>
+              <p class="terms">
+                By finalizing your order, you agree to the
+                <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>
+              </p>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Saved for Later -->
+      <section class="saved">
+        <div class="saved__container">
+          <h1 class="section-title">Saved for later</h1>
+          <!-- card 1 -->
+          <article class="card">
+            <div class="card__artwork">
+              <div class="saved-img">
+                <img
+                  src="https://mtracks.azureedge.net/public/images/albums/520/261.jpg"
+                  alt="Album Cover"
+                />
+              </div>
+              <div class="card__artwork__title">
+                <span class="song-title">Forever (Live Version)</span>
+                <span class="artist-title">Kari Jobe</span>
+              </div>
+            </div>
+            <div class="remove show-mobile">
+              <button class="btn">
+                <i class="bi bi-x-lg" style="font-size: 18px"></i>
+              </button>
+            </div>
+            <div class="product__type">
+              <div class="cart-card-img">
+                <img src="/img/multitracks.png" alt="" />
+              </div>
+              <span class="product-text">MultiTrack WAV</span>
+            </div>
+            <div class="card-button show-mobile">
+              <button class="btn-outline-grey">Add To Cart</button>
+            </div>
+            <div class="saved-remove-add show-desktop">
+              <a href="#">Remove</a>
+              <button class="btn-outline-grey">Add To Cart</button>
+            </div>
+          </article>
+          <hr />
+          <!-- card 2 -->
+          <article class="card">
+            <div class="card__artwork">
+              <div class="saved-img">
+                <img
+                  src="https://mtracks.azureedge.net/public/images/albums/520/587.jpg"
+                  alt="Album Cover"
+                />
+              </div>
+              <div class="card__artwork__title">
+                <span class="song-title">In God We Trust</span>
+                <span class="artist-title">Hillsong Worship</span>
+              </div>
+            </div>
+            <div class="remove show-mobile">
+              <button class="btn">
+                <i class="bi bi-x-lg" style="font-size: 18px"></i>
+              </button>
+            </div>
+            <div class="product__type">
+              <div class="cart-card-img">
+                <img src="/img/multitracks.png" alt="" />
+              </div>
+              <span class="product-text">MultiTrack WAV</span>
+            </div>
+            <div class="card-button show-mobile">
+              <button class="btn-outline-grey">Add To Cart</button>
+            </div>
+            <div class="saved-remove-add show-desktop">
+              <a href="#">Remove</a>
+              <button class="btn-outline-grey">Add To Cart</button>
+            </div>
+          </article>
+          <hr />
+          <!-- card 3 -->
+          <article class="card">
+            <div class="card__artwork">
+              <div class="saved-img">
+                <img
+                  src="https://mtracks.azureedge.net/public/images/albums/520/239.jpg"
+                  alt="Album Cover"
+                />
+              </div>
+              <div class="card__artwork__title">
+                <span class="song-title">This is Amazing Grace</span>
+                <span class="artist-title">Phil Wickham</span>
+              </div>
+            </div>
+            <div class="remove show-mobile">
+              <button class="btn">
+                <i class="bi bi-x-lg" style="font-size: 18px"></i>
+              </button>
+            </div>
+            <div class="product__type">
+              <div class="cart-card-img">
+                <img src="/img/multitracks.png" alt="" />
+              </div>
+              <span class="product-text">MultiTrack WAV</span>
+            </div>
+            <div class="card-button show-mobile">
+              <button class="btn-outline-grey">Add To Cart</button>
+            </div>
+            <div class="saved-remove-add show-desktop">
+              <a href="#">Remove</a>
+              <button class="btn-outline-grey">Add To Cart</button>
+            </div>
+          </article>
+          <hr />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer__main">
+        <div class="footer__main__wrapper">
+          <!-- Link Group -->
+          <div class="footer__link__group">
+            <div class="footer__link__col">
+              <h2 class="footer__title">Products</h2>
+              <nav class="footer__nav">
+                <ul>
+                  <li><a href="">The Connected Stage</a></li>
+                  <li><a href="">Tracks</a></li>
+                  <li><a href="">Playback</a></li>
+                  <li><a href="">Pad Player</a></li>
+                  <li><a href="">Playback Rentals</a></li>
+                  <li><a href="">Cloud Pro</a></li>
+                  <li><a href="">RehearsalMix</a></li>
+                  <li><a href="">ChartBuilder</a></li>
+                  <li><a href="">Solo Practice Bundle</a></li>
+                  <li><a href="">Charts</a></li>
+                  <li><a href="">ProPresenter</a></li>
+                  <li><a href="">Sounds</a></li>
+                  <li><a href="">Gratis License</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__link__col">
+              <h2 class="footer__title">Resources</h2>
+              <nav class="footer__nav">
+                <ul>
+                  <li><a href="">Songs</a></li>
+                  <li><a href="">Patches</a></li>
+                  <li><a href="">Training</a></li>
+                </ul>
+              </nav>
+              <h2 class="footer__title">Company</h2>
+              <nav class="footer__nav">
+                <ul>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Careers</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Partner Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__link__col">
+              <h2 class="footer__title">Store</h2>
+              <nav class="footer__nav">
+                <ul>
+                  <li><a href="">Buy Credits</a></li>
+                  <li><a href="">Free Content</a></li>
+                  <li><a href="">Request a Song</a></li>
+                </ul>
+              </nav>
+              <h2 class="footer__title">Company</h2>
+              <nav class="footer__nav">
+                <ul>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Careers</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Partner Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__link__col">
+              <h2 class="footer__title">Account</h2>
+              <nav class="footer__nav">
+                <ul>
+                  <li><a href="">View Cart</a></li>
+                  <li><a href="">Organization</a></li>
+                  <li><a href="">My Profile</a></li>
+                  <li><a href="">Library</a></li>
+                  <li><a href="">Setlists</a></li>
+                  <li><a href="">RehearsalMix</a></li>
+                  <li><a href="">Custom Session</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!-- Footer - Newsletter -->
+          <div class="footer__newsletter">
+            <h1 class="footer__title">Subscribe to our Newsletter</h1>
+            <div class="input-footer">
+              <input type="text" name="" id="" placeholder="Email Address" />
+              <button>Subscribe</button>
+            </div>
+          </div>
+          <!-- Footer - FAQ -->
+          <div class="footer__faq">
+            <h1 class="footer__title">Have a Problem?</h1>
+            <a href="">View FAQs or Contact our Support Team</a>
+          </div>
+
+          <!-- Footer - Social -->
+          <div class="footer__social">
+            <div class="footer__social__icons">
+              <a href=""><img src="/public/facebook.png" alt="" /></a>
+              <a href=""><img src="/public/twitter.png" alt="" /></a>
+              <a href=""><img src="/public/instagram.png" alt="" /></a>
+              <a href=""><img src="/public/youtube.png" alt="" /></a>
+            </div>
+            <div class="footer__social__follow">
+              <div class="img">
+                <a href=""><img src="/public/facebook-like.png" alt="" /></a>
+              </div>
+              <div class="img">
+                <a href=""><img src="/public/twitter-follow.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer - Secondary  -->
+      <section class="footer__secondary">
+        <div class="footer__secondary__wrapper">
+          <div class="text-top">
+            <i class="bi bi-globe"></i>
+            <span>English</span>
+            <i class="bi bi-caret-down-fill"></i>
+          </div>
+          <div class="text-middle">
+            <a href="">Terms</a>
+            <span>|</span>
+            <a href="">Privacy</a>
+            <span>|</span>
+            <a href="">Contact</a>
+          </div>
+          <div class="text-bottom">
+            <div>
+              <span>&copy; 2006-2022 MultiTracks.com </span>
+            </div>
+            <div>
+              <span>All Rights Reserved </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- Sticky Mobile Footer -->
+    <div class="sticky__footer show-mobile">
+      <div class="wrapper">
+        <div class="sticky__footer__text">
+          <div>TOTAL</div>
+          <div>41 Credits</div>
+        </div>
+        <button class="btn-footer">PLACE ORDER</button>
+      </div>
+    </div>
   </body>
 </html>

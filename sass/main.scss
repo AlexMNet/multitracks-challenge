@@ -4,6 +4,16 @@
 @import 'base/base';
 @import 'base/typography';
 
-@import 'components/link';
+@import 'components/buttons';
+@import 'components/card';
 @import 'components/inputs';
+@import 'components/link';
+
+@import 'layout/cart';
+@import 'layout/footer';
+@import 'layout/grid';
+@import 'layout/main';
 @import 'layout/navbar';
+@import 'layout/saved';
+@import 'layout/sticky__footer';
+@import 'layout/summary';
