@@ -12,8 +12,8 @@
       }
     }
     &__mobile {
-      display: flex;
       align-items: center;
+      display: flex;
       justify-content: space-between;
 
       &__menu {
@@ -27,25 +27,25 @@
           background: $color-lightest-grey;
           border-radius: 50%;
           height: 5px;
-          width: 5px;
-          pointer-events: none;
           margin-right: 5px;
+          pointer-events: none;
+          width: 5px;
         }
       }
 
       &__right {
-        display: flex;
-        justify-content: center;
         align-items: center;
-        gap: 32px;
         color: $color-lightest-grey;
+        display: flex;
+        gap: 32px;
+        justify-content: center;
       }
     }
 
     &__desktop {
+      align-items: center;
       display: none;
       flex-direction: row;
-      align-items: center;
       justify-content: space-between;
 
       ul {
@@ -56,8 +56,8 @@
       }
 
       &__left {
-        display: flex;
         align-items: center;
+        display: flex;
         gap: 16px;
 
         .covid-link {
@@ -66,9 +66,9 @@
       }
 
       &__right {
+        align-items: center;
         display: flex;
         flex-direction: row;
-        align-items: center;
 
         ul {
           li {
@@ -80,8 +80,8 @@
           }
         }
         &__search {
-          display: flex;
           align-items: center;
+          display: flex;
           position: relative;
 
           img {

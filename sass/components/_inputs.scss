@@ -1,23 +1,23 @@
 .input-footer {
-  display: flex;
   align-items: center;
+  display: flex;
 
   input {
-    padding: 5px 8px;
     background-color: $color-input-bg-dark;
     border: 1px solid $color-input-border-dark;
     color: $color-text-light-grey;
     height: 40px;
+    padding: 5px 8px;
     width: 239px;
   }
 }
 
 .input-nav {
-  padding: 5px;
-  border-radius: 5px;
-  color: $color-text-dark-grey;
-  border: 2px solid $color-lightest-grey;
   background-color: $color-white;
+  border-radius: 5px;
+  border: 2px solid $color-lightest-grey;
+  color: $color-text-dark-grey;
+  padding: 5px;
 
   &::placeholder {
     color: $color-lightest-grey;

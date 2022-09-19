@@ -1,52 +1,52 @@
 // Display badge count over cart
 @mixin navbar-badge {
   [data-badge-count]::after {
-    content: attr(data-badge-count);
     align-items: center;
     background: $color-light-blue;
     border-radius: 50%;
     color: $color-white;
+    content: attr(data-badge-count);
     display: flex;
     font-size: 12px;
-    font-weight: 600;
     font-style: normal;
+    font-weight: 600;
     height: 15px;
     justify-content: center;
     left: 5px;
     line-height: 15px;
+    min-width: 16px;
     padding: 2px 2px;
     position: absolute;
     top: -5px;
-    min-width: 16px;
   }
 }
 
 @mixin cart-image {
-  width: 48px;
   height: 48px;
   margin-right: 16px;
+  width: 48px;
 
   @media (min-width: 1440px) {
-    width: 88px;
     height: 88px;
+    width: 88px;
   }
 
   img {
+    border-radius: 2px;
     object-fit: cover;
     width: 100%;
-    border-radius: 2px;
   }
 }
 
 @mixin saved-image {
-  width: 48px;
   height: 48px;
   margin-right: 16px;
+  width: 48px;
 
   img {
+    border-radius: 2px;
     object-fit: cover;
     width: 100%;
-    border-radius: 2px;
   }
 }
 
