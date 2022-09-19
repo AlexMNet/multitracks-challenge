@@ -12,8 +12,8 @@
 
     &__wrapper {
       display: flex;
-      flex-wrap: wrap;
       flex-direction: column;
+      flex-wrap: wrap;
       margin: 0 auto;
       max-width: 1170px;
       width: 100%;
@@ -39,8 +39,8 @@
   }
 
   &__link__col {
-    min-width: 144px;
     flex-grow: 1;
+    min-width: 144px;
     width: 33.33%;
   }
 
@@ -88,21 +88,21 @@
   }
 
   &__social {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 22px;
+    justify-content: center;
     margin-bottom: 20px;
 
     @media (min-width: $desktop-breakpoint) {
-      display: block;
-      width: auto;
-      margin: 0;
-      grid-column: 2 span 1;
-      order: 4;
       align-items: center;
+      display: block;
       float: right;
+      grid-column: 2 span 1;
+      margin: 0;
+      order: 4;
+      width: auto;
     }
 
     &__icons {
@@ -117,11 +117,11 @@
     }
 
     &__follow {
+      align-items: center;
       display: flex;
       flex-direction: row;
-      justify-content: center;
-      align-items: center;
       gap: 5px;
+      justify-content: center;
     }
   }
 
@@ -131,24 +131,24 @@
     padding: 15px;
 
     &__wrapper {
+      align-items: center;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      gap: 16px;
       margin: 0 auto;
       max-width: 1170px;
-      gap: 16px;
 
       @media (min-width: $desktop-breakpoint) {
+        align-items: center;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
       }
 
       .text-top {
-        display: flex;
-        justify-content: center;
         align-items: center;
+        display: flex;
         gap: 10px;
+        justify-content: center;
 
         @media (min-width: $desktop-breakpoint) {
           order: 3;
@@ -171,9 +171,9 @@
           margin: 0;
         }
         @media (min-width: $desktop-breakpoint) {
-          order: 1;
           display: flex;
           gap: 5px;
+          order: 1;
         }
       }
     }

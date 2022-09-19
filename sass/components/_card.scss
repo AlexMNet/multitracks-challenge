@@ -1,8 +1,8 @@
 .card {
   display: grid;
   &__artwork {
-    display: flex;
     align-items: center;
+    display: flex;
     grid-area: artwork;
 
     .cart-img {
@@ -22,8 +22,8 @@
       flex-direction: column;
 
       .song-title {
-        font-weight: bold;
         color: $color-black;
+        font-weight: bold;
 
         @media (min-width: $desktop-breakpoint) {
           font-size: 16px;
@@ -42,19 +42,19 @@
   }
 
   .product__type {
-    grid-area: product-type;
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 6px;
+    grid-area: product-type;
 
     img {
       vertical-align: middle;
     }
     .product-text {
-      vertical-align: middle;
+      color: $color-text-dark-grey;
       font-weight: bold;
       line-height: 24px;
-      color: $color-text-dark-grey;
+      vertical-align: middle;
     }
   }
   .credit {
@@ -72,17 +72,17 @@
     @media (min-width: $desktop-breakpoint) {
       display: flex;
     }
+    color: $color-text-dark-grey;
     grid-area: remove-save;
     justify-self: end;
-    color: $color-text-dark-grey;
   }
 
   .saved-remove-add {
-    grid-area: saved-remove-add;
+    color: $color-text-dark-grey;
     display: none;
     flex-direction: row;
     gap: 10px;
-    color: $color-text-dark-grey;
+    grid-area: saved-remove-add;
     justify-self: end;
 
     @media (min-width: $desktop-breakpoint) {
@@ -90,13 +90,13 @@
     }
 
     button {
-      display: inline-block;
-      padding: 5px 15px;
-      border-radius: 15px;
       background-color: $color-white;
+      border-radius: 15px;
       border: 1px solid $color-text-dark-grey;
       color: $color-text-medium-grey;
       cursor: pointer;
+      display: inline-block;
+      padding: 5px 15px;
     }
   }
 }

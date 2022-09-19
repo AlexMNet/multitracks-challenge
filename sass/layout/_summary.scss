@@ -29,9 +29,9 @@
     }
 
     &__row {
+      align-items: center;
       display: flex;
       flex-direction: row;
-      align-items: center;
       justify-content: space-between;
 
       @media (min-width: $desktop-breakpoint) {
@@ -57,9 +57,9 @@
         text-align: center;
       }
       .terms {
-        text-align: center;
-        font-size: 14px;
         color: $color-text-light-grey;
+        font-size: 14px;
+        text-align: center;
 
         a {
           color: inherit;

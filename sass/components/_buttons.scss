@@ -1,13 +1,23 @@
-.btn-outline-grey {
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
-  padding: 5px 15px;
-  border-radius: 15px;
+.btn {
   background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  outline: none;
+  padding: 0;
+}
+
+.btn-outline-grey {
+  background-color: transparent;
+  border-radius: 15px;
   border: 1px solid $color-text-dark-grey;
   color: $color-text-medium-grey;
   cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  padding: 5px 15px;
+  position: relative;
   transition: 150ms ease-in-out;
 
   &:hover,
@@ -17,18 +27,18 @@
 }
 
 .btn-summary {
-  position: relative;
-  overflow: hidden;
+  background-color: $color-light-blue;
+  border-radius: 50px;
+  border: none;
   color: $color-white;
   cursor: pointer;
-  background-color: $color-light-blue;
-  border: none;
-  padding: 12px 60px;
-  border-radius: 50px;
   margin-bottom: 16px;
-  width: 100%;
   max-width: 500px;
+  overflow: hidden;
+  padding: 12px 60px;
+  position: relative;
   transition: 150ms ease-in-out;
+  width: 100%;
 
   &:hover {
     background-color: darken($color-light-blue, 15%);
@@ -36,14 +46,14 @@
 }
 
 .btn-footer {
-  position: relative;
-  overflow: hidden;
   background-color: $color-light-blue;
   border-radius: 50px;
   border: none;
   color: $color-white;
-  padding: 16px 26px;
   cursor: pointer;
+  overflow: hidden;
+  padding: 16px 26px;
+  position: relative;
 
   &:hover {
     background-color: darken($color-light-blue, 15%);
@@ -51,15 +61,15 @@
 }
 
 .btn-continue {
-  margin-top: 15px;
   margin-bottom: 20px;
+  margin-top: 15px;
   i {
     color: $color-light-blue;
     font-size: 11px;
   }
   button {
-    border: none;
     background-color: transparent;
+    border: none;
     color: $color-light-blue;
     cursor: pointer;
     font-size: 16px;
@@ -67,28 +77,18 @@
 }
 
 .btn-input {
-  position: relative;
-  overflow: hidden;
-  width: 112px;
-  height: 40px;
   background-color: $color-light-blue;
   border-radius: 0px 4px 4px 0px;
   border: none;
-  cursor: pointer;
   color: $color-white;
+  cursor: pointer;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
   transition: 150ms ease-in-out;
+  width: 112px;
 
   &:hover {
     background-color: darken($color-light-blue, 15%);
   }
-}
-
-.btn {
-  cursor: pointer;
-  background-color: transparent;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  outline: none;
 }
